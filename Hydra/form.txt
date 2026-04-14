@@ -1,0 +1,1 @@
+/vulnerabilities/brute/:username=^USER^&password=^PASS^&Login=Login:F=Username and/or password incorrect.:H=Cookie: PHPSESSID=592b030997a446171d4d5608d588342e; security=low

